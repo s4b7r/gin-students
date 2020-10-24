@@ -7,12 +7,16 @@
 int Auswahl;
 float Ergebnis;
 
-void eingabe() {
+void festlegenOperation() {
     printf("Grundrechenarten\n\n");
     printf("(1) Addition\n(2) Subtraktion\n(3) Multiplikation\n(4) Division\n\n");
     printf("Waehlen Sie aus: \n");
     scanf("%d", &Auswahl);
     printf("_______________________________________________________________\n");
+}
+
+void eingabe() {
+    festlegenOperation();
     festlegenGanzzahligerWerte();
 }
 
