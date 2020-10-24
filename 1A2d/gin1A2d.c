@@ -20,24 +20,21 @@ int main(int argc, char** argv) {
     printf("Waehlen Sie aus: \n");
     scanf("%d", &Auswahl);
     printf("_______________________________________________________________\n");
+    festlegenGanzzahligerWerte();
 
     if (Auswahl == 1) { //Addition
-        festlegenGanzzahligerWerte();
         Ergebnis = Zahl1 + Zahl2;
         printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 2) { //Subtraktion
-        festlegenGanzzahligerWerte();
         Ergebnis = Zahl1 - Zahl2;
         printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 3) { //Multiplikation
-        festlegenGanzzahligerWerte(); 
         Ergebnis = Zahl1 * Zahl2;
         printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 4) { //Division
-        festlegenGanzzahligerWerte();
         Ergebnis = Zahl1 / Zahl2;
         printf("Ergebnis = %f", Ergebnis);
     }
