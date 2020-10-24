@@ -8,7 +8,7 @@
 // Bei globalen Varibalen zieht sich mir alles zusammen! :-/
 float Zahl1, Zahl2;
 
-void festlegenGanzzahligerWerte() {
+void festlegenZweierGanzzahligerWerte() {
     printf("Legen Sie Ihre ganzzahligen Werte fest:\n\n");
     printf("a = ");
     scanf("%f", &Zahl1);

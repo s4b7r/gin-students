@@ -17,7 +17,7 @@ void festlegenOperation() {
 
 void eingabe() {
     festlegenOperation();
-    festlegenGanzzahligerWerte();
+    festlegenZweierGanzzahligerWerte();
 }
 
 void verarbeitung() {
