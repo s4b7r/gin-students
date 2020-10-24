@@ -1,15 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-float Zahl1, Zahl2;
-
-void festlegenGanzzahligerWerte() {
-    printf("Legen Sie Ihre ganzzahligen Werte fest:\n\n");
-    printf("a = ");
-    scanf("%f", &Zahl1);
-    printf("b = ");
-    scanf("%f", &Zahl2);
-}
+#include "header.h"
 
 int main(int argc, char** argv) {
     float Ergebnis;
