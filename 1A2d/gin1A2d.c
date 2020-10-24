@@ -16,22 +16,22 @@ int main(int argc, char** argv) {
 
     if (Auswahl == 1) { //Addition
         Ergebnis = Zahl1 + Zahl2;
-        printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 2) { //Subtraktion
         Ergebnis = Zahl1 - Zahl2;
-        printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 3) { //Multiplikation
         Ergebnis = Zahl1 * Zahl2;
-        printf("Ergebnis = %f", Ergebnis);
     }
     else if (Auswahl == 4) { //Division
         Ergebnis = Zahl1 / Zahl2;
-        printf("Ergebnis = %f", Ergebnis);
     }
     else {
         printf("Waehlen Sie bitte eine Zahl zwischen 1 und 4.\n");
     }
+
+    printf("Ergebnis = %f", Ergebnis);
+
     return 0;
 }
+    
