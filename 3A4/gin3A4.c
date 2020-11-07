@@ -4,14 +4,14 @@
 
 #define AnzahlNoten 10
 
-float Eingabe(float note, int x);
+float Eingabe(int x);
 float Addition(int y, float note, float Summe);
 float Mittelwert(float Ergebnis);
 int Ausgabe(float Addition, float Mittelwert);
 
 void eingabe(float noten[AnzahlNoten]) {
     for (int i = 0; i < AnzahlNoten; i++) {
-        noten[i] = Eingabe(noten[i], i);
+        noten[i] = Eingabe(i);
     }
 }
 
@@ -25,7 +25,8 @@ float verarbeitung(float noten[AnzahlNoten]) {
     return durchschnitt;
 }
 
-float Eingabe(float note, int x) {
+float Eingabe(int x) {
+    float note;
     printf("%d. Fach:\t", x);
     scanf("%f", &note);
     return note;
