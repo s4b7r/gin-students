@@ -4,6 +4,12 @@
 
 #define AnzahlNoten 10
 
+void eingabe(float noten[AnzahlNoten]) {
+    for (int i = 0; i < AnzahlNoten; i++) {
+        noten[i] = Eingabe(noten[i], i);
+    }
+}
+
 float Eingabe(float fach1, int x) {
     printf("%d. Fach:\t", x);
     scanf("%f", &fach1);
@@ -33,15 +39,11 @@ int main(int argc, char** argv) {
     float summe = 0, durchschnitt = 0;
 
     // Schleifen in FUnktionen
-    // Arrays in FUnktionen
-    // Arrays aus Funktionen
     // Namen in Funktionen
     // Fehlervermeidung
 
     //Eingabe
-    for (i = 0; i < AnzahlNoten; i++) {
-        fach[i] = Eingabe(fach[i], i);
-    }
+    eingabe(fach);
 
     //Verarbeitung
 
