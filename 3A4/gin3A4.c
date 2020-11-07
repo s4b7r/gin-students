@@ -11,7 +11,7 @@ void eingabe(float noten[AnzahlNoten]) {
 }
 
 float verarbeitung(float noten[AnzahlNoten]) {
-    float summe, durchschnitt;
+    float summe = 0, durchschnitt;
     for (int i = 0; i < AnzahlNoten; i++) {
         summe = Addition(i, noten[i], summe);
     }
