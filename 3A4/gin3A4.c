@@ -5,7 +5,7 @@
 #define AnzahlNoten 10
 
 float Eingabe(int x);
-float Addition(int y, float note, float Summe);
+float Addition(float note, float Summe);
 float Mittelwert(float Ergebnis);
 int Ausgabe(float Addition, float Mittelwert);
 
@@ -18,7 +18,7 @@ void eingabe(float noten[AnzahlNoten]) {
 float verarbeitung(float noten[AnzahlNoten]) {
     float summe = 0, durchschnitt;
     for (int i = 0; i < AnzahlNoten; i++) {
-        summe = Addition(i, noten[i], summe);
+        summe = Addition(noten[i], summe);
     }
     durchschnitt = Mittelwert(summe);
 
@@ -32,7 +32,7 @@ float Eingabe(int x) {
     return note;
 }
 
-float Addition(int y, float note, float Summe) {
+float Addition(float note, float Summe) {
     Summe = Summe + note;
     return Summe;
 }
