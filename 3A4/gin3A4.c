@@ -4,8 +4,8 @@
 
 #define AnzahlNoten 10
 
-float Eingabe(float fach1, int x);
-float Addition(int y, float fach2, float Summe);
+float Eingabe(float fach, int x);
+float Addition(int y, float fach, float Summe);
 float Mittelwert(float Ergebnis);
 int Ausgabe(float Addition, float Mittelwert);
 
@@ -25,20 +25,20 @@ float verarbeitung(float noten[AnzahlNoten]) {
     return durchschnitt;
 }
 
-float Eingabe(float fach1, int x) {
+float Eingabe(float fach, int x) {
     printf("%d. Fach:\t", x);
-    scanf("%f", &fach1);
-    return fach1;
+    scanf("%f", &fach);
+    return fach;
 }
 
-float Addition(int y, float fach2, float Summe) {
-    Summe = Summe + fach2;
+float Addition(int y, float fach, float Summe) {
+    Summe = Summe + fach;
     return Summe;
 }
 
-float Mittelwert(float Ergebnis) {
+float Mittelwert(float summe) {
     float mittelwert;
-    mittelwert = Ergebnis / AnzahlNoten;
+    mittelwert = summe / AnzahlNoten;
     return mittelwert;
 }
 
@@ -53,7 +53,6 @@ int main(int argc, char** argv) {
     int i;
     float summe = 0, durchschnitt = 0;
 
-    // Namen in Funktionen
     // Fehlervermeidung
 
     //Eingabe
