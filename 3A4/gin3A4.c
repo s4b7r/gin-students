@@ -32,6 +32,12 @@ int main(int argc, char** argv) {
     int i;
     float summe = 0, durchschnitt = 0;
 
+    // Schleifen in FUnktionen
+    // Arrays in FUnktionen
+    // Arrays aus Funktionen
+    // Namen in Funktionen
+    // Fehlervermeidung
+
     //Eingabe
     for (i = 0; i < AnzahlNoten; i++) {
         fach[i] = Eingabe(fach[i], i);
