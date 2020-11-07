@@ -5,7 +5,6 @@
 #define AnzahlNoten 10
 
 float note_abfragen(int note_nummer);
-float Addition(float note, float Summe);
 float Mittelwert(float Ergebnis);
 int Ausgabe(float Addition, float Mittelwert);
 
@@ -18,7 +17,7 @@ void eingabe(float noten[AnzahlNoten]) {
 float verarbeitung(float noten[AnzahlNoten]) {
     float summe = 0, durchschnitt;
     for (int i = 0; i < AnzahlNoten; i++) {
-        summe = Addition(noten[i], summe);
+        summe += noten[i];
     }
     durchschnitt = Mittelwert(summe);
 
@@ -30,11 +29,6 @@ float note_abfragen(int note_nummer) {
     printf("%d. Fach:\t", note_nummer);
     scanf("%f", &note);
     return note;
-}
-
-float Addition(float note, float Summe) {
-    Summe = Summe + note;
-    return Summe;
 }
 
 float Mittelwert(float summe) {
