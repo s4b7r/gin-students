@@ -4,6 +4,11 @@
 
 #define AnzahlNoten 10
 
+float Eingabe(float fach1, int x);
+float Addition(int y, float fach2, float Summe);
+float Mittelwert(float Ergebnis);
+int Ausgabe(float Addition, float Mittelwert);
+
 void eingabe(float noten[AnzahlNoten]) {
     for (int i = 0; i < AnzahlNoten; i++) {
         noten[i] = Eingabe(noten[i], i);
