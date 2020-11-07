@@ -10,6 +10,16 @@ void eingabe(float noten[AnzahlNoten]) {
     }
 }
 
+float verarbeitung(float noten[AnzahlNoten]) {
+    float summe, durchschnitt;
+    for (int i = 0; i < AnzahlNoten; i++) {
+        summe = Addition(i, noten[i], summe);
+    }
+    durchschnitt = Mittelwert(summe);
+
+    return durchschnitt;
+}
+
 float Eingabe(float fach1, int x) {
     printf("%d. Fach:\t", x);
     scanf("%f", &fach1);
@@ -38,7 +48,6 @@ int main(int argc, char** argv) {
     int i;
     float summe = 0, durchschnitt = 0;
 
-    // Schleifen in FUnktionen
     // Namen in Funktionen
     // Fehlervermeidung
 
@@ -46,11 +55,7 @@ int main(int argc, char** argv) {
     eingabe(fach);
 
     //Verarbeitung
-
-    for (i = 0; i < AnzahlNoten; i++) {
-        summe = Addition(i, fach[i], summe);
-    }
-    durchschnitt = Mittelwert(summe);
+    durchschnitt = verarbeitung(fach);
 
     //Ausgabe
     Ausgabe(summe, durchschnitt);
